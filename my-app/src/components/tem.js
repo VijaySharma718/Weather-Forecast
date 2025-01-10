@@ -29,12 +29,12 @@ function WeatherForecast() {
   }, [search, apiKey]);
 
   return (
-    <div className="bg-custom-pattern bg-cover h-screen flex justify-center items-center">
-      <div className="bg-gray-600 rounded-md shadow-lg shadow-gray-950">
+    <div className="bg-custom-pattern bg-cover h-screen w-full flex justify-center items-center ">
+      <div className="bg-gray-600 rounded-md shadow-lg shadow-gray-950 ">
         <h1 className=" text-4xl text-center font-semibold text-white p-5 ">
           Weather Forecast
         </h1>
-        <div className="bg-white h-[500px] w-[450px] p-5 rounded-lg shadow-lg shadow-gray-950">
+        <div className="bg-white sm:h-[500px] sm:w-[450px] p-5 rounded-lg shadow-lg shadow-gray-950 h-[400px] w-[370px] ">
           <input
             type="text"
             className="w-full h-10 border-2 border-gray-400 rounded-md p-2"
@@ -57,7 +57,7 @@ function WeatherForecast() {
                 </h1>
               </div>
 
-              <div className="bg-gray-600 h-[300px] rounded-lg flex-col text-center pt-24 mt-5">
+              <div className="bg-gray-600 h-[16vh] rounded-lg flex-col text-center pt-24 mt-5 sm:h-[40vh]">
                 <h2 className="text-white text-5xl font-semibold">
                   {city.main.temp}°C
                 </h2>
